@@ -100,9 +100,14 @@ def ArticleContentCrawler(row):
 nowtime = datetime.now()
 df = df.apply(ArticleContentCrawler, axis=1)
 
+from string import punctuation
+import os
+nowtimestr = str(nowtime)
+datestr = ''.join([t for t in nowtimestr if t not in punctuation]).split()[0]
+df.to_csv(os.path.join('articles', datestr + 'articles.csv'), encoding ='utf8', index=False)
 
-from pymongo import MongoClient
-conn = MongoClient()
-db = conn.ithome_ironman
-collection = db.articles
-cursor = collection.insert_many(list(df.T.to_dict().values()))
+# from pymongo import MongoClient
+# conn = MongoClient()
+# db = conn.ithome_ironman
+# collection = db.articles
+# cursor = collection.insert_many(list(df.T.to_dict().values()))
