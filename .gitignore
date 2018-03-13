@@ -1,8 +1,8 @@
 .ipynb_checkpoints
 .DS_Store
 .vscode
-.model
-.big
-.ttf
-.npy
+*.model
+*.big
+*.ttf
+*.npy
 __pycache__
