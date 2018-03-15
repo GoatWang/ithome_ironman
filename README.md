@@ -46,7 +46,7 @@ Although all of them are written in Chinese, I translate their title into Englis
     - [Weekend Special - Predict Top 10 Days Browse Count for iThome Competition Articles](https://ithelp.ithome.com.tw/articles/10195967)
 
 
-## Encourage I got from linkedin
+## Feedback I got from linkedin
 Google Translation: 
 ```
 Hi, I see your article on Iron Man
